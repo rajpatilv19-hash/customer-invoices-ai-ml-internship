@@ -1,0 +1,4 @@
+cleaned_customer_invoices.csv
+.ipynb_checkpoints/
+__pycache__/
+*.pyc

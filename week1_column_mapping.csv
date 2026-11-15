@@ -1,0 +1,10 @@
+project_field,dataset_column,availability,notes
+Invoice ID,invoice_id,Available,Unique numeric invoice identifier.
+Customer,customer_name,Available,Customer name; customer_id is also available as a stable identifier.
+Invoice Date,invoice_date,Available,Date invoice was issued.
+Due Date,due_date,Available,Payment due date.
+Payment Date,payment_date,Available with cleaning rule,"Original source column exists. In the cleaned dataset, non-Paid dates are blank; original values are preserved in original_payment_date."
+Payment Status,payment_status,Available,"Status values include Paid, Pending, Overdue, and Cancelled."
+Amount,total_amount,Available,Invoice total amount.
+Currency,currency,Available,Currency code for total_amount.
+Country,customer_country,Available,Customer country.

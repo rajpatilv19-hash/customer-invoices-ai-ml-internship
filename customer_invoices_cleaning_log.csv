@@ -1,0 +1,14 @@
+Issue,Action Taken,Result
+Missing values in original data,Checked all columns,No missing values found
+Duplicate invoice IDs,Checked invoice_id,0 duplicates
+Duplicate invoice numbers,Checked invoice_number,0 duplicates
+Invalid invoice dates,Parsed dates using errors='coerce',0 invalid dates
+Due date before invoice date,Compared due_date and invoice_date,0 invalid records
+Negative or zero invoice amounts,Checked total_amount,0 invalid amounts
+Invalid numerical values,"Checked quantity, price, discount, tax and shipping",0 invalid records
+Text standardization,Removed extra spaces and standardized text,Completed
+Payment method standardization,Corrected Upi to UPI,Completed
+Non-paid payment dates,Preserved original dates and masked dates for non-Paid invoices,Confirmed: payment_date is blank for non-Paid invoices; original dates preserved.
+Days to pay and delay,Created days_to_pay and delay,Created for Paid invoices
+Paid late indicator,Created paid_late using delay > 0,0 paid-late invoices found
+Invoice state,Created open_paid_flag,"Paid, Open and Cancelled categories created"

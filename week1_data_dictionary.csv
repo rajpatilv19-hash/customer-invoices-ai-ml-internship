@@ -1,0 +1,32 @@
+column_name,original_data_type,meaning
+invoice_id,int64,Unique numeric identifier assigned to each invoice.
+invoice_number,object,Human-readable invoice reference number.
+invoice_date,object,Date on which the invoice was issued.
+due_date,object,Date by which the invoice payment is due.
+customer_id,object,Unique identifier for the customer.
+customer_name,object,Name of the customer billed on the invoice.
+customer_email,object,Email address associated with the customer.
+customer_city,object,City where the customer is located.
+customer_state,object,"State, province, or regional area of the customer."
+customer_country,object,Country where the customer is located.
+vendor_id,object,Unique identifier for the vendor or supplier.
+vendor_name,object,Name of the vendor or supplier associated with the invoice.
+product_id,object,Identifier of the product listed on the invoice.
+product_category,object,Category to which the invoiced product belongs.
+product_name,object,Name or description of the invoiced product.
+quantity,int64,Number of units invoiced.
+unit_price,float64,Price charged for one unit of the product.
+discount_percent,float64,Discount percentage applied to the invoice or product.
+tax_percent,float64,Tax percentage applied.
+subtotal,float64,"Amount before discount, tax, and other additional charges, as defined by the source dataset."
+discount_amount,float64,Monetary value of the discount applied.
+tax_amount,float64,Monetary value of tax charged.
+shipping_cost,float64,Shipping or delivery cost charged.
+total_amount,float64,Final invoice amount recorded in the stated currency.
+currency,object,"Currency code used for the invoice amount, such as INR, USD, or EUR."
+payment_method,object,Method used or recorded for paying the invoice.
+payment_status,object,"Recorded invoice payment status, such as Paid, Pending, Overdue, or Cancelled."
+payment_date,object,Recorded date associated with payment; cleaned workflow retains this only for Paid invoices.
+order_channel,object,Channel through which the order was placed.
+sales_rep,object,Sales representative associated with the transaction.
+is_overdue,int64,"Source-provided overdue indicator, represented numerically (0/1)."
